@@ -4,7 +4,7 @@ def color_pair_to_string(major_color, minor_color):
 
   return f'{major_color}\t\t{minor_color}'
 
-def ref_manual():
+def console_print_ref_manual():
     
     print('################# Reference Manual #################')
     print('Major Color\tMinor Color\tPair Number')

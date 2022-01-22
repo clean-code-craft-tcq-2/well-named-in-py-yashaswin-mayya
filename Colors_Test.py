@@ -8,3 +8,11 @@ def test_number_to_pair(pair_number, expected_major_color, expected_minor_color)
 def test_pair_to_number(major_color, minor_color, expected_pair_number):
   pair_number = get_pair_number_from_color(major_color, minor_color)
   assert(pair_number == expected_pair_number)
+
+def test_reference_manual():
+  pair_id_of_reference_manual = 1
+  for major_colour in MAJOR_COLORS:
+    for minor_color in MINOR_COLORS:
+      pair_number_from_colour = get_pair_number_from_color(major_colour, minor_color)
+      assert(pair_id_of_reference_manual == pair_number_from_colour)
+      pair_id_of_reference_manual += 1
